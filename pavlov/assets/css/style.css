@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* --- mixin 定義 ---------------------------------------- */
+/* --- ハンバーガーmenu　------------------------------------　*/
 .nav_area {
   width: 100vw;
   height: 80px;
@@ -22,6 +23,12 @@
   width: 30px;
   height: 30px;
   z-index: 300;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav_open.active div:nth-last-child(2) {
+  opacity: 0;
 }
 
 .nav_open div {
@@ -45,6 +52,7 @@
           transform: translate(-50%, 10px);
 }
 
+/* --- ハンバーガーmenu　------------------------------------　*/
 /* --- 全体のBOX定義 ---------------------------------------- */
 .box {
   position: relative;

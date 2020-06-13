@@ -39,8 +39,14 @@
     z-index: 300;
     transition: 0.3s;
     &.active div {
+      &:nth-last-child(1) {
+        transform: rotate(45deg);
+      }
       &:nth-last-child(2) {
         opacity: 0;
+      }
+      &:nth-last-child(3) {
+        transform: rotate(-45deg);
       }
     }
     & div {

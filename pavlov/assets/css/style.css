@@ -11,6 +11,7 @@ body {
   position: relative;
   max-width: 1400px;
   height: 100vh;
+  min-height: 375px;
   margin: auto;
   overflow: hidden;
 }
@@ -211,8 +212,7 @@ body {
   background-color: #fff;
   width: 100vw;
   height: 100vh;
-  min-height: 375px;
-  position: absolute;
+  min-height: 580px;
   z-index: 300;
   opacity: 0;
   visibility: hidden;

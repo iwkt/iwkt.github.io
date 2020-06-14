@@ -18,6 +18,11 @@
   vertical-align: inherit;
 }
 
+*, .col {
+  margin: 0;
+  padding: 0;
+}
+
 *, .grid {
   margin: 0;
   padding: 0;

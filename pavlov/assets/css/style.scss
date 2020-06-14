@@ -302,7 +302,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: .3s;
-  position: relative;
+  position: fixed;
 
   &.active {
     opacity: 1;

@@ -265,7 +265,7 @@ body {
   visibility: hidden;
   -webkit-transition: .3s;
   transition: .3s;
-  position: relative;
+  position: fixed;
 }
 
 .nav_mb_base.active {

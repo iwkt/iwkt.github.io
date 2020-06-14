@@ -28,6 +28,7 @@
   padding: 0;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -43,6 +44,16 @@ div[class*="col"] {
 }
 
 div[class*="grid"] {
+  margin: 0;
+  padding: 0;
+}
+
+div[class~="col"] {
+  margin: 0;
+  padding: 0;
+}
+
+div[class~="grid"] {
   margin: 0;
   padding: 0;
 }

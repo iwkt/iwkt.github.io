@@ -153,19 +153,63 @@ body {
 //     // color      : #fff;
 //     }
 // }
+
+
+#header {
+  position:relative;
+  z-index:2;
+}
+
+.content {
+  &:nth-of-type(1) {
+  margin: 70px 0;
+  padding: 50px 0;
+  }
+  & h1 {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.grid-center {
+  margin: 0 !important;
+}
+
+.inner_logo {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  background-color:#fff;
+  width:100%;
+  height: 80px;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+
+  &.active {
+    opacity: 1;
+  }
+
+  & img {
+    width: 100px;
+  }
+}
+
 .nav_area {
   width: 100vw;
   height: 80px;
   position: fixed;
   top: 0;
   margin: 0 auto;
-  z-index: 800;
+  z-index: 20;
   & a {
     display: block;
     position: fixed;
     top: 30px;
     right: 30px;
-    z-index: 1000;
+    z-index: 30;
   }
 }
 
@@ -203,7 +247,13 @@ body {
     }
   }
 
+.main {
+  height: 800px;
+  width: 100%;
+}
 
+
+//　スライドイン　------------------------------
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -239,6 +289,8 @@ body {
   transform  : translate(-50%,-50%);
   // z-index    : 200;
 }
+//　スライドイン　ここまで　------------------------
+
 
 .nav_mb_base {
   background-color: #fff;
@@ -246,7 +298,7 @@ body {
   height: 100vh;
   min-height: 580px;
   // position: absolute;
-  z-index: 300;
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   transition: .3s;

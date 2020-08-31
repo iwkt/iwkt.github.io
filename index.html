@@ -1,87 +1,140 @@
 <!DOCTYPE html>
-<html>
+  <html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <title>Progate</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>KESCO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/css/reset_style.css">
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+    <div class="glorbal_container">
+      <div class="mbl__container">
+        <nav class="mbl__hdr grid-spaceBetween">
+          <div class="mbl__hdr__logo col-4-middle">
+            <img src="./assets/images/logo.png" alt="">
+          </div>
+          <!-- hamburger menu ここから-->
+          <div class="nav_area col">
+            <a id="navOpen" class="nav_open">
+              <div></div>
+              <div></div>
+              <div></div>
+            </a>
+          </div>
+          <!-- hamburger menu ここまで-->
+        </nav>
+        <div id="MBL__menu" class="mbl__menu">
+          <ul class="mbl__menu__ul">
+            <li class="mbl__menu__li acd__parent__ttl" ><a href="#">KESCOの強み<p>OUR STRENGTHS</p></a></li>
+            <li class="mbl__menu__li acd__parent__ttl" ><a  href="#">事業内容<p>SERVICES</p></a>
+                <!-- toggleボタン minus ここから -->
+                <a class="toglle_block">
+                  <div></div>
+                  <div></div>
+                </a>
+                <!-- toggleボタン minus ここまで -->
+              <ul class="mbl__menu__chd__ul acd__child__size7">
+                <li><a href="#">事業内容一覧</a></li>
+                <li><a href="#">バルブのメンテナンス</a></li>
+                <li><a href="#">エンジニアリング</a></li>
+                <li><a href="#">部品の供給</a></li>
+                <li><a href="#">技術者派遣</a></li>
+                <li><a href="#">製造補助</a></li>
+                <li><a href="#">建造物のメンテナンス</a></li>
+              </ul>
+            </li>
+            <li class="mbl__menu__li acd__parent__ttl" ><a href="#">部品の商会<p>PARTS</p></a></li>
+            <li class="mbl__menu__li acd__parent__ttl" ><a href="#">会社情報<p>ABOUT US</p></a></li>
+            <li class="mbl__menu__li acd__parent__ttl" ><a  href="#">採用情報<p>RECRUIT</p></a>
+                <!-- toggleボタン minus ここから -->
+                <a class="toglle_block">
+                  <div></div>
+                  <div></div>
+                </a>
+                <!-- toggleボタン minus ここまで -->
+              <ul class="mbl__menu__chd__ul acd__child__size5">
+                <li><a href="#">採用情報一覧</a></li>
+                <li><a href="#">代表メッセージ</a></li>
+                <li><a href="#">人を知る</a></li>
+                <li><a href="#">研修・資格支援制度</a></li>
+                <li><a href="#">募集要項</a></li>
+              </ul>
+            </li>
+            <li class="mbl__menu__li acd__parent__ttl" ><a href="#">新着情報<p>WHAT'S NEW</p></a></li>
+            <li class="mbl__menu__li acd__parent__ttl" ><a href="#">お問い合わせ<p>CONTSCT US</p></a></li>
+          </ul>
         </div>
-        <div class="header-right">
-          <a href="#" class="login">ログイン</a>
-        </div>
+        <section class="mbl__slider mbl__sldr1">
+          <!-- Slider main container -->
+          <div class="swiper-container mbl_swiper_top">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide1">
+                <img class="kv_txt" src="./assets/images/main-img01_xs.jpg">
+              </div>
+              <div class="swiper-slide slide2">
+                <img class="kv_txt" src="./assets/images/main-img02_xs.jpg">
+              </div>
+              <div class="swiper-slide slide3">
+                <img class="kv_txt" src="./assets/images/main-img03_xs.jpg">
+              </div>
+              <div class="swiper-slide slide4">
+                <img class="kv_txt" src="./assets/images/main-img05_xs.jpg">
+              </div>
+            </div>
+          </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Slider main container -->
+        </section>
+        <section class="mbl__strong cth__copy">
+          <div class="cth__copy__bk"></div>
+          <div class="cth__copy__slide">
+            <img src="./assets/images/top_strong-img_md.jpg" alt="" class="mbl__strong__img cth__copy__img" >
+          </div>
+          <div class="cth__copy__container">
+            <div class="cth__copy__wrapper">
+              <h1 class="cth__copy__ttl right">OUR STRENGTHS
+              </h1>
+              <p class="cth__copy__ttl_s right">KESCOの強み</p>
+              <p class="cth__copy__ttl__sub right">必要とされ続ける、<br>バルブの職人。</p>
+              <p class="cth__copy__text">私たちはKITZグループ会社として、バルブのメンテナンス・エンジニアリングに関わるサービスを提供しています。特定建設業（管工事業）、 労働者派遣事業 、 一般建設業（塗装工事業・防水工事業・内装仕上工事業・電気工事業）の許可を取得しています。</p>
+            </div>
+            <div class="btn white_btn">
+              <a href="#">KESCOの強み</a>
+            </div>
+          </div>
+        </section>
+        <section id="SERVICES" class="text__area">
+          <div class="text__area__ttl">
+            <h2>SERVICES</h2>
+            <p>事業内容</p>
+          </div>
+          <div class="text__area__comment">
+            <p>KESCOは、国内最大手のバルブメーカーであるKITZの販売ネットワークや各種データ類をバックボーンに、メンテナンスに関する多様なニーズにお応えしています。また、他メーカーのバルブやアクチュエータも取扱い、全国各地にスムーズできめ細かいサービスを提供しています。
+            </p>
+          </div>
+        </section>
       </div>
+    </div>
+    <header class="hdr">
+
+      <div class="hdr__nav"></div>
     </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>LEARN TO CODE.</h1>
-        <h1>LEARN TO BE CREATIVE.</h1>
-        <p>Progateはオンラインプログラミング学習サービスです。</p>
-        <p>初心者にもやさしいスライドとレッスンで、Webサービスを作りながら私とプログラミングを学んでいきましょう。</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">新規登録はこちら</a>
-          <p>or sign up with</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-        </div>
-      </div>
     </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Learn Where to Get Started!</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>HTML & CSS</p>
-            </div>
-            <p class="txt-contents">Webページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
-            </div>
-            <p class="txt-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="txt-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="txt-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-          <h3>Let's learn to code, learn to be creative!</h3>
-        </div>
-        <span class="btn message">さっそく開発する!</span>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-        <p>Learn to code, learn to be creative.</p>
-      </div>
-    </footer>
+        <script src="./assets/js/toggle_rote_minus.js"></script>
+    <script src="./assets/js/fadeIn.js"></script>
+    <script src="./assets/js/hmgr.js"></script>
+    <script src="./assets/js/clickAddclass.js"></script>
+    <script src="./assets/js/img-zoom.js"></script>
+    <script src="./assets/swiper/swiper.js"></script>
+    <script src="./assets/js/swiper_local.js"></script>
   </body>
 </html>
